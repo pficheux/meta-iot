@@ -5,23 +5,18 @@ Please see the corresponding sections below for details.
 Dependencies
 ============
 
-  URI: <first dependency>
-  branch: <branch name>
+The layer depends on:
 
-  URI: <second dependency>
-  branch: <branch name>
+meta-openembedded/meta-oe
+meta-openembedded/meta-python
+meta-openembedded/meta-networking
 
-  .
-  .
-  .
+-> to be added to conf/bblayers.conf
 
 Patches
 =======
 
-Please submit any patches against the meta-iot layer to the xxxx mailing list (xxxx@zzzz.org)
-and cc: the maintainer:
-
-Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
+Maintainer: Pierre FICHEUX <pierre.ficheux@gmail.com>
 
 Table of Contents
 =================
