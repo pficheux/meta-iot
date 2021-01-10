@@ -37,10 +37,6 @@ II. Misc
 
 DISTRO_FEATURES_apppend = " wifi"
 
-2- Add the layer
-
-$ bitbake-layer add-layer <path>/meta-iot
-
-3- Build the image (Pi0/W or Pi3)
+2- Build the image (Pi0/W or Pi3)
 
 $ bitbake rpi-iot-image
