@@ -1,0 +1,14 @@
+# Base this image on core-image-minimal
+include recipes-core/images/core-image-minimal.bb
+
+IMAGE_FEATURES += "package-management"
+IMAGE_ROOTFS_EXTRA_SPACE = "10000"
+
+IMAGE_INSTALL += "kernel-module-i2c-dev kernel-module-i2c-bcm2835 i2c-tools mosquitto-clients"
+
+# Sensor
+IMAGE_INSTALL += "mpl115a2"
+#IMAGE_INSTALL += "tsl2561"
+
+# Wi-Fi
+#IMAGE_INSTALL += "iw wpa-supplicant"
