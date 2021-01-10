@@ -33,4 +33,14 @@ Run 'bitbake-layers add-layer meta-iot'
 II. Misc
 ========
 
---- replace with specific information about the meta-iot layer ---
+1- Add the following line to local.conf
+
+DISTRO_FEATURES_apppend = " wifi"
+
+2- Add the layer
+
+$ bitbake-layer add-layer <path>/meta-iot
+
+3- Build the image (Pi0/W or Pi3)
+
+$ bitbake rpi-iot-image
